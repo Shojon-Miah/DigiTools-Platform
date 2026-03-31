@@ -15,15 +15,13 @@ const ProductSection = ({ cartItems, onAddToCart }) => {
           <h2 className="text-3xl font-bold text-gray-900 mb-3">
             Premium Digital Tools
           </h2>
-
           <p className="text-gray-500 text-sm max-w-md mx-auto">
             Choose from our curated collection of premium digital products designed
             to boost your productivity and creativity.
           </p>
-
         </div>
 
-        {/* Toggle buttons */}
+        {/* Toggle Buttons */}
         <div className="product-toggle flex items-center justify-center gap-2 mb-10">
           <button
             onClick={() => setActiveTab('products')}
@@ -31,7 +29,7 @@ const ProductSection = ({ cartItems, onAddToCart }) => {
               activeTab === 'products'
                 ? 'bg-purple-600 text-white'
                 : 'bg-white text-gray-600 border border-gray-300 hover:border-purple-600 hover:text-purple-600'
-            } `}
+            }`}
           >
             Products
           </button>
@@ -47,7 +45,7 @@ const ProductSection = ({ cartItems, onAddToCart }) => {
           </button>
         </div>
 
-        {/* Products grid */}
+        {/* Products Grid */}
         {activeTab === 'products' && (
           <div className="products-grid grid grid-cols-1 md:grid-cols-3 gap-6">
             {productsData.map((product) => (

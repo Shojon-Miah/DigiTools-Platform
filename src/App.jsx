@@ -4,6 +4,7 @@ import Banner from './components/Banner'
 import Stats from './components/Stats'
 import ProductSection from './components/ProductSection'
 import Steps from './components/Steps'
+import Footer from './components/Footer'
 
 function App() {
   const [cartItems, setCartItems] = useState([])
@@ -22,6 +23,7 @@ function App() {
       <Steps />
       <Stats />
       <ProductSection cartItems={cartItems} onAddToCart={handleAddToCart} />
+      <Footer />
     </div>
   )
 }
