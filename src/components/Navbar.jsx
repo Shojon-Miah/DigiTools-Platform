@@ -46,7 +46,7 @@ const Navbar = ({ cartItems }) => {
             )}
           </div>
 
-          {/* Login button */}
+          {/* Login utton */}
           <a href="#" className="text-gray-600 hover:text-purple-600 font-medium">
             Login
           </a>
