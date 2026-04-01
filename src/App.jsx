@@ -5,6 +5,7 @@ import Stats from './components/Stats'
 import ProductSection from './components/ProductSection'
 import Steps from './components/Steps'
 import Pricing from './components/Pricing'
+import CallToAction from './components/CallToAction'
 import Footer from './components/Footer'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <Stats />
       <ProductSection cartItems={cartItems} onAddToCart={handleAddToCart} />
       <Pricing />
+      <CallToAction />
       <Footer />
     </div>
   )
