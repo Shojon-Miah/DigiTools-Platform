@@ -75,7 +75,7 @@ const ProductCard = ({ product, onAddToCart, cartItems }) => {
         {description}
       </p>
 
-      {/* Price */}
+      {/* Price + Period */}
       <div className="product-price flex items-baseline gap-1">
         <span className="text-2xl font-bold text-gray-900">${price}</span>
         <span className="text-sm text-gray-500">{periodLabel[period]}</span>
@@ -94,7 +94,12 @@ const ProductCard = ({ product, onAddToCart, cartItems }) => {
       {/* Buy Now Button */}
       <button
         onClick={() => onAddToCart(product)}
-        className="product-buy-btn w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 rounded-full transition-colors mt-auto"
+        className={`product-buy-btn w-full font-medium py-3 rounded-full transition-colors mt-auto ${
+          isInCart
+            ? 'bg-gray-200 text-gray-500 cursor-not-allowed'
+            : 'bg-purple-600 hover:bg-purple-700 text-white'
+        }`}
+        disabled={isInCart}
       >
         {isInCart ? 'Added to Cart' : 'Buy Now'}
       </button>
