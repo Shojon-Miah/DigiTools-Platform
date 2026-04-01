@@ -16,7 +16,7 @@
 
 ## Features
 
--The first feature is the dynamic cart system. Users can add and remove products from the cart at any time. The total price and number of items in the cart are updated in real time.
+- The first feature is the dynamic cart system. Users can add and remove products from the cart at any time. The total price and number of items in the cart are updated in real time.
 
 - The second feature is the product and cart toggle functionality. By clicking on the toggle button, users can easily navigate between the product list and cart view, without any page reload.
 
