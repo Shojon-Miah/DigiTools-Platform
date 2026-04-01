@@ -3,7 +3,7 @@ import ProductCard from './ProductCard'
 import CartSection from './CartSection'
 import productsData from '../data/products.json'
 
-const ProductSection = ({ cartItems, onAddToCart }) => {
+const ProductSection = ({ cartItems, onAddToCart, onRemoveFromCart, onProceedToCheckout }) => {
   const [activeTab, setActiveTab] = useState('products')
 
   return (
@@ -61,7 +61,11 @@ const ProductSection = ({ cartItems, onAddToCart }) => {
 
         {/* Cart Section */}
         {activeTab === 'cart' && (
-          <CartSection cartItems={cartItems} />
+          <CartSection
+            cartItems={cartItems}
+            onRemoveFromCart={onRemoveFromCart}
+            onProceedToCheckout={onProceedToCheckout}
+          />
         )}
 
       </div>
