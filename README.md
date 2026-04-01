@@ -1,18 +1,20 @@
-# React + Vite
+ 
+ ## The name of my Project is DigiTools-Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## A little Description about my Project
+- DigiTools-Platform is a modern digital tools marketplace where you can discover and purchase premium AI tools, design assets, and productivity software. It has a dynamic cart system where products can be added, removed, and checked out. The project is built with React and Tailwind CSS, so it's fast and looks great on all devices.
 
-Currently, two official plugins are available:
+## Technologies Used
+- **React.js** — UI building
+- **Vite** — Fast development build tool
+- **Tailwind CSS v4** — Utility-first CSS framework
+- **DaisyUI** — Tailwind CSS component library
+- **React Icons** — Icon library
+- **React-Toastify** — Toast notification library
+- **JavaScript ES6+** — Modern JavaScript
+- **JSON** — Product data management
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+The first feature is the dynamic cart system. Users can add and remove products from the cart at any time. The total price and number of items in the cart are updated in real time.
+The second feature is the product and cart toggle functionality. By clicking on the toggle button, users can easily navigate between the product list and cart view, without any page reload.
+The third feature is the toast notification system with React-Toastify. When a product is added, removed, or checked out, an immediate notification is displayed on the screen.
