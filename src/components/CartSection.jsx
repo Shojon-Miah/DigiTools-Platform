@@ -27,6 +27,8 @@ const iconMap = {
 }
 
 const CartSection = ({ cartItems, onRemoveFromCart, onProceedToCheckout }) => {
+  const totalPrice = cartItems.reduce((sum, item) => sum + item.price, 0)
+
   return (
     <div className="cart-section w-full">
       {cartItems.length === 0 ? (
@@ -81,6 +83,23 @@ const CartSection = ({ cartItems, onRemoveFromCart, onProceedToCheckout }) => {
               </div>
             ))}
           </div>
+
+          {/* Divider */}
+          <div className="border-t border-gray-200 my-4"></div>
+
+          {/* Total */}
+          <div className="cart-total flex items-center justify-between mb-6">
+            <span className="text-gray-500 text-sm">Total:</span>
+            <span className="text-xl font-bold text-gray-900">${totalPrice}</span>
+          </div>
+
+          {/* Proceed to Checkout Button */}
+          <button
+            onClick={onProceedToCheckout}
+            className="cart-checkout-btn w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 rounded-full transition-colors"
+          >
+            Proceed To Checkout
+          </button>
 
         </div>
       )}
